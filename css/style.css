@@ -1,0 +1,86 @@
+body{
+    border: solid;
+    border-width: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.foto{
+    border: solid;
+    width: 100px;
+    height: 100px;
+    margin-top: -40px;
+    margin-left: 43%;
+}
+
+.usuario{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.name{
+    margin-top: 80px;
+}
+
+.titulo{
+    margin-top: 200px;
+    margin-left: 110px;
+    font-size: 50px;
+}
+
+header{
+    border-bottom: solid;
+    width: 99,8%;
+    height: 150px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+}
+
+.menu{
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.espacamentoMenu{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.navMenu{
+    border: solid;
+    border-width: 1px;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    width: 99,8%;
+    height: 50px;
+}
+
+.conteudoSecao{
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    width: 99,8%;
+    height: 550px;
+
+}
+.rodaPe{
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    width: 99,8%;
+    height: 120px;
+
+}
