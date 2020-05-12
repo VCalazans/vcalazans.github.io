@@ -9,14 +9,10 @@
         margin-left: 20%;
         font-size: 25px;
         text-align: center;
+        flex-direction: column;
     }
 
-    #divFoto{
-        margin-top: 40px;
-        margin-left: 30%;
-        font-size: 20px;
-        flex-direction: column;
-    }  
+
 
     #lbUsuario, #lbSenha{
 
@@ -26,11 +22,22 @@
     #inputSenha{
         margin-top: 2px;
         margin-left: 11px;
+        flex-direction: column;
     }
 
     #btLogin{
         margin-top: 3px;
     }
+
+    #tituloPost{
+        font-size: 20px;
+    }
+
+    #btVerMais1{
+        flex: 1;
+        flex-direction: column;
+    }
+
 
  
 }
@@ -53,13 +60,31 @@ main{
 
 .foto{
     border: solid;
-    width: 100px;
-    height: 100px;
-    margin-top: -45px;
-    margin-left: 43%;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 2%;
     margin-bottom: 10px;
-    flex: 1;
-    
+}
+
+.post{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5px;
+    background-color: lightsteelblue;
+}
+
+
+
+.textoPostagem{
+    margin-left: 10px;
+    margin-top: -1px;
+}
+
+.postTable{
+    margin-top: -1%;
 }
 
 .usuario{
@@ -74,25 +99,18 @@ main{
 
 .titulo{
     margin-top: 200px;
-    margin-left: 110px;
+    margin-left: 20px;
     font-size: 50px;
 }
 
 header{
+    all: unset;
     width: 99,8%;
-    height: 150px;
+    height: 20px;
     margin-bottom: 2px;
     flex: 1;
     background-color:white;
 
-}
-
-.menu{
-    margin-left: 20%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #343434;
-    flex: 1;
 }
 
 .botaoEntrar{
@@ -109,39 +127,41 @@ header{
     cursor: pointer;
 }
 
-.espacamentoMenu{
-    margin-left: 80px;
-    font-size: 20px;
+.btVerMais{
+    background-color: lightslategray;
+    border: none;
+    color: black;
+    padding: 2px 32px;
+    text-align: center;
     text-decoration: none;
-    color: white;
-    font-family:sans-serif
     font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    flex: 1;
 }
+
 
 nav{
     background-color: white;
 }
 
-.navMenu{
-    background-color:#343434;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 99,8%;
-    height: 50px;
-    flex: 1;
-}
 
 .conteudoSecao{
     background-color: lightgray;
     border-width: 1px;
-    margin-top: 5px;
+    margin-top: -15px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 2px;
     width: 99,8%;
-    height: 670px;
-    flex: 1;
-
+    height: auto;
+    
 }
 
 
@@ -158,8 +178,7 @@ nav{
 
 }
 
-.menu a:hover{
-    background-color: #F0CC01;
-    color: black;
-    padding: 5px;
+.usuario a:hover{
+    background-color: rgba(245, 229, 14, 0.747);
+
 }

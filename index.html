@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Victor Calazans</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/pgPrincipal.js"></script>
+    
+
+
 </head>
 <body>
     <header>
@@ -16,28 +24,84 @@
         </nav>
 
         <label class="titulo" id="lbTitulo">Victor Calazans</label>
-        <!--
-        <div class="foto" id="divFoto">
-            <img src="" alt="" >    
-        </div>
-        -->
 
     </header>
 
-    <nav class="navMenu">
-        <nav id="listaMenu" class="menu">
-            <a href="" class="espacamentoMenu"> Início </a>
-            <a href="" class="espacamentoMenu"> Contribuições </a>
-            <a href="" class="espacamentoMenu"> Conteúdo </a>
-            <a href="" class="espacamentoMenu"> Contato </a>
-            <a href="" class="espacamentoMenu"> Habilidades </a>
-        </nav>
-    </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#contribuicoes">Contribuições</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#contato">Contato</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
 
     <main>
 
-        <section class="conteudoSecao">
+        <section class="conteudoSecao" id="conteudoSecao">
 
+            <h1 style="margin-left: 10%;">Últimas postagens</h1>
+
+
+            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+
+                <table class="postTable">
+                    <tr id="tbArtcPost">
+                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt=""  height="50" width="50"></div></td>
+                    <td><p class="textoPostagem">  Lorem Ipsum is simply dummy text of bananas.</p> </td>
+                    <a id="btVerMais1" class="btVerMais">ver mais</a>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+
+                <table class="postTable">
+                    <tr id="tbArtcPost">
+                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                    <td><p class="textoPostagem">  Lorem Ipsum is simply dummy text of bananas.</p> </td>
+                    <a id="btVerMais1" class="btVerMais">ver mais</a>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+
+                <table class="postTable">
+                    <tr id="tbArtcPost">
+                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
+                    <a id="btVerMais1" class="btVerMais">ver mais</a>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+
+                <table class="postTable">
+                    <tr id="tbArtcPost">
+                    <td><div class="foto" id="divFoto"><img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
+                    <a id="btVerMais1" class="btVerMais">ver mais</a>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+
+                <table class="postTable">
+                    <tr id="tbArtcPost">
+                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
+                    <a id="btVerMais1" class="btVerMais">ver mais</a>
+                    </tr>
+                </table>
+            </article>
+                
+                
         </section>
 
         <footer class="rodaPe">
