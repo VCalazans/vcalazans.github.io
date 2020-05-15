@@ -6,30 +6,40 @@
     
     <title>Victor Calazans</title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/pgPrincipal.js"></script>
-    
+    <link rel="stylesheet" href="css/post.css">
 
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/pgPrincipal.js"></script>
+
+    
+    <script type = "text/javascript">
+        google.charts.load('current', {packages: ['corechart','bar']});      
+     </script>
 
 </head>
 <body>
     <header>
 
+        <form action="">
         <nav class="usuario">
         <label id="lbUsuario" style="font-family: sans-serif; font-weight: bold;"> Usuário : <input id="inputUsuario" type="text"></input> </label>
         <label id="lbSenha" style="font-family: sans-serif; font-weight: bold;"> Senha : <input id="inputSenha" type="password" value="12345678910"></input> </label>
-        <a id="btLogin" class="botaoEntrar">entrar</a>
+        <a id="btLogin" class="botaoEntrar" type="submit">entrar</a>
         </nav>
+        </form>
 
         <label class="titulo" id="lbTitulo">Victor Calazans</label>
 
     </header>
 
+
         <div class="topnav" id="myTopnav">
             <a href="#inicio" class="active">Início</a>
-            <a href="#contribuicoes">Contribuições</a>
+            <a href="contribuicoes.html">Contribuições</a>
             <a href="#conteudo">Conteúdo</a>
             <a href="#contato">Contato</a>
             <a href="#habilidades">Habilidades</a>
@@ -38,69 +48,81 @@
             </a>
           </div>
 
+    
 
     <main>
 
         <section class="conteudoSecao" id="conteudoSecao">
 
-            <h1 style="margin-left: 10%;">Últimas postagens</h1>
+            <h1 style="margin-left: 2%;">Dados COVID-19 - SC</h1>
+
+            <div class="w3-row">
+                <!--
+                <div class="w3-quarter w3-container w3-white" style="width:300px; height: 300px; margin-left: 20px; margin-right: 20px;">
+                    <img src="img/IA.jpg" alt="IA"  height="200" width="280">
+                    <a href="http://"> Estudos voltados a teste teste testes e mais teste.</a>
+                </div>
+                -->
+                <div class="w3-rest w3-container w3-white" style="margin-left: 20px; margin-right: 20px; height: 400px;">
+                    <div id = "container" style = "width: auto; height: 400px; margin: 0 auto">
+                    </div>
+                    <script language = "JavaScript">
+
+                       getCasos();
+                    
+                       google.charts.setOnLoadCallback(drawChart);
+                    </script>
+                </div>
+              </div>
+              <br>
+              
+              <div class="w3-row">
 
 
-            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+                <div class="w3-quarter w3-right w3-container w3-white" style="width:250px; height: 300px; margin-left: 20px; margin-right: 20px;">
+                    <img src="img/circuito.jpg" alt="IA"  height="250" width="200"><br>
+                    <a href="http://"> Testes com Circuidos Elerônicos e IOT : ESP32, ARDUINO, RASPBERRY-PI, LINUX EMBARCADO.</a>
+                </div>
 
-                <table class="postTable">
-                    <tr id="tbArtcPost">
-                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt=""  height="50" width="50"></div></td>
-                    <td><p class="textoPostagem">  Lorem Ipsum is simply dummy text of bananas.</p> </td>
-                    <a id="btVerMais1" class="btVerMais">ver mais</a>
-                    </tr>
-                </table>
-            </article>
 
-            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+                <div id="" class="w3-quarter w3-container w3-white" style="margin-left: 20px; margin-right: 20px; width: 1100px;">
+                    <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
 
-                <table class="postTable">
-                    <tr id="tbArtcPost">
-                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
-                    <td><p class="textoPostagem">  Lorem Ipsum is simply dummy text of bananas.</p> </td>
-                    <a id="btVerMais1" class="btVerMais">ver mais</a>
-                    </tr>
-                </table>
-            </article>
+                        <table class="postTable">
+                            <tr id="tbArtcPost">
+                            <td><div  id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                            <td><a href="http://"> Lorem Ipsum is simply dummy text of bananas.</a> </td>
+                            <a id="btVerMais1" class="btVerMais">ver mais</a>
+                            </tr>
+                        </table>
+                    </article>
 
-            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+                    <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
 
-                <table class="postTable">
-                    <tr id="tbArtcPost">
-                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
-                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
-                    <a id="btVerMais1" class="btVerMais">ver mais</a>
-                    </tr>
-                </table>
-            </article>
+                        <table class="postTable">
+                            <tr id="tbArtcPost">
+                            <td><div  id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                            <td><a href="http://"> Lorem Ipsum is simply dummy text of bananas.</a></td>
+                            <a id="btVerMais1" class="btVerMais">ver mais</a>
+                            </tr>
+                        </table>
+                    </article>
 
-            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
+                    <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
 
-                <table class="postTable">
-                    <tr id="tbArtcPost">
-                    <td><div class="foto" id="divFoto"><img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
-                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
-                    <a id="btVerMais1" class="btVerMais">ver mais</a>
-                    </tr>
-                </table>
-            </article>
-
-            <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
-
-                <table class="postTable">
-                    <tr id="tbArtcPost">
-                    <td><div class="foto" id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
-                    <td><p class="textoPostagem" >  Lorem Ipsum is simply dummy text of bananas.</p> </td>
-                    <a id="btVerMais1" class="btVerMais">ver mais</a>
-                    </tr>
-                </table>
-            </article>
-                
+                        <table class="postTable">
+                            <tr id="tbArtcPost">
+                            <td><div  id="divFoto">  <img src="img/cpluspluspng.png" alt="" height="50" width="50"></div></td>
+                            <td><a href="http://"> Lorem Ipsum is simply dummy text of bananas.</a> </td>
+                            <a id="btVerMais1" class="btVerMais">ver mais</a>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+              </div>
+              <br>
+              
+              
                 
         </section>
 
