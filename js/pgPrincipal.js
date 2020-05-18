@@ -16,8 +16,8 @@ function getCasos() {
        data["results"].forEach(({city, city_ibge_code, confirmed, confirmed_per_100k_inhabitants, date, death_rate, deaths,
                estimated_population_2019, is_last, place_type, state}) =>
        mapCasos.set(city, confirmed)
-    ).catch(erro => alert(erro));
-   })
+    )
+   }).catch(erro => alert(erro));
  }
 
  function drawChart() {
