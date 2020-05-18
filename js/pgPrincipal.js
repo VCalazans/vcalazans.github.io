@@ -9,7 +9,7 @@ function menu() {
     }
   }
 
-  function getCasos(pais) {
+function getCasos() {
     fetch("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SC")
     .then(response => response.json())
     .then(data => {
@@ -18,6 +18,11 @@ function menu() {
        mapCasos.set(city, confirmed)
 
        )
+
+       if (!data)
+        return false;
+       else 
+        return true; 
    })
  }
 
