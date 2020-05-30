@@ -3,10 +3,16 @@
     width: auto;
     height: auto;
     margin-top: 1px;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 
+.postTable{
+    margin-top: -1%;
+    margin-bottom: 10px;
+    background: #f7f7f7;
+    
+}
 
 
 .btVerMais{
@@ -26,4 +32,11 @@
     margin-right: 10px;
     margin-top: 15px;
     flex: 1;
+}
+
+@media only screen and (max-width: 1410px){
+
+    #postRight{
+        visibility: hidden;
+    }
 }

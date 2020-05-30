@@ -8,12 +8,14 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/post.css">
 
     <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/pgPrincipal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
     
     <script type = "text/javascript">
@@ -31,12 +33,12 @@
         <a id="btLogin" class="botaoEntrar" type="submit">entrar</a>
         </nav>
         <label class="titulo" id="lbTitulo">Victor Calazans</label>
-
+        <br>
+        <a href="cadastro.html" style="float: right; margin-right: 4.8%; font-weight: bold; margin-top: -20px;"> Cadastre-se</a>
         </form>
 
 
     </header>
-
 
         <div class="topnav" id="myTopnav">
             <a href="#inicio" class="active">Início</a>
@@ -44,35 +46,29 @@
             <a href="#conteudo">Conteúdo</a>
             <a href="#contato">Contato</a>
             <a href="#habilidades">Habilidades</a>
+            <script>
+                var displayWidth = $(document).width();
+                if(displayWidth < 1366)
+                    document.write('<a href="loginMobile.html">Login</a>')
+            </script>
+        
             <a href="javascript:void(0);" class="icon" onclick="menu()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
 
-    
-
-    <main>
+        <main>
 
         <section class="conteudoSecao" id="conteudoSecao">
 
             <h1 style="margin-left: 2%;">Dados COVID-19 - SC</h1>
 
             <div class="w3-row">
-                <!--
-                <div class="w3-quarter w3-container w3-white" style="width:300px; height: 300px; margin-left: 20px; margin-right: 20px;">
-                    <img src="img/IA.jpg" alt="IA"  height="200" width="280">
-                    <a href="http://"> Estudos voltados a teste teste testes e mais teste.</a>
-                </div>
-                -->
-                <div class="w3-rest w3-container w3-white" style="margin-left: 20px; margin-right: 20px; height: 400px;">
+                <div class="w3-rest w3-container w3-lightgray" style="margin-left: 20px; margin-right: 20px; height: 400px; ">
                     <div id = "container" style = "width: auto; height: 400px; margin: 0 auto">
                     </div>
                     <script language = "JavaScript">
-                       for(var i = 0; i < 15;i++){
-                        getCasos();
-                        if(mapCasos)
-                            break;
-                       }
+                       getCasos();
                        google.charts.setOnLoadCallback(drawChart);
                     </script>
                 </div>
@@ -81,7 +77,7 @@
               
 
               <div class="w3-row ">
-                <div class="w3-twothird w3-container w3-white">
+                <div class="w3-twothird w3-container w3-#f7f7f7" style="margin-bottom: 10px;">
                    
                     <article class="post" id="artcPost"> <h2 id="tituloPost">Título da Postagem</h2> 
 
@@ -124,8 +120,8 @@
 
                 </div>
 
-                <div class="w3-third w3-container" style="width: 250px; float: right; margin-top: 30px;">
-                    <img src="img/circuito.jpg" alt="IA"  height="250" width="200"><br>
+                <div id="postRight" class="w3-third w3-container" style=" float: left; margin-top: 30px;">
+                    <img id="imgIOT" src="img/circuito.jpg" alt="IA"  height="300" width="100%"><br>
                     <a href="http://"> Testes com Circuitos Elerônicos e IOT : ESP32, ARDUINO, RASPBERRY-PI, LINUX EMBARCADO.</a>
                 </div>
                 </div>

@@ -16,13 +16,13 @@
   }
   
   .topnav a:hover {
-    background-color: #4CAF50;
+    background-color: rgb(255, 199, 45);
     color: black;
     font-weight: bold;
   }
   
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: rgb(255, 199, 45);
     color: black;
     font-weight: bold;
   }
@@ -31,7 +31,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1366px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -40,7 +40,7 @@
     
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1366px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;

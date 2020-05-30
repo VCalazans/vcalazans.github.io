@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Victor Calazans</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/criarUsuario.css">
+    <script src="js/pgPrincipal.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <form id="frmLogin" action="">
+            <nav class="usuario">
+                <label id="lbUsuario" style="font-family: sans-serif; font-weight: bold;"> Usuário : <input
+                        id="inputUsuario" type="text"></input> </label>
+                <label id="lbSenha" style="font-family: sans-serif; font-weight: bold;"> Senha : <input id="inputSenha"
+                        type="password" value="12345678910"></input> </label>
+                <a id="btLogin" class="botaoEntrar" type="submit">entrar</a>
+                <br>
+            </nav>
+            <label class="titulo" id="lbTitulo">Victor Calazans</label>
+        </form>
+
+
+
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Início</a>
+        <a href="#contribuicoes" >Contribuições</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#contato">Contato</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="javascript:void(0);" class="icon" onclick="menu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+
+        <section id="conteudoSecao">
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome_cad">Seu nome</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+
+                    <p>
+                        <label for="email_cad">Seu e-mail</label>
+                        <input id="email_cad" name="email_cad" required="required" type="email"
+                            placeholder="contato@htmlecsspro.com" />
+                    </p>
+
+                    <p>
+                        <label for="senha_cad">Sua senha</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password"
+                            placeholder="ex. 1234" />
+                    </p>
+
+                    <p>
+                        <input id = "btCadastrar" type="submit" value="Cadastrar" />
+                    </p>
+
+                    <!--
+                    <p class="link">
+                        Já tem conta?
+                        <a href="#paralogin"> Ir para Login </a>
+                    </p>
+                    -->
+                </form>
+            </div>
+
+
+        </section>
+
+        <div class="w3-quarter w3-container w3-white" style="width: 100%; height: 120px;">
+            <footer class="rodaPe" style="margin-left: 0px; margin-right: 0px;">
+
+            </footer>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,10 +1,19 @@
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 1410px){
+
     body{
         flex-direction: column;
         margin-top: -100px;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    
+    #frmLogin{
+        visibility: hidden;
+    }
+
+    #imgIOT{
+        width: 210px;
     }
 
     #lbTitulo{
@@ -55,11 +64,14 @@ html{
 }
 
 .conteudoContribuicao{
-    width: 80%;
-    height: 700px;
-    margin-left: 5%;
+    width: auto;
+    height: 900px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 5px;
-    background-color: white;
+    background: #f7f7f7;
+    border: 1px solid rgba(147, 184, 189,0.8);
+    background-color: #f7f7f7;
 }
 
 body{
@@ -71,6 +83,7 @@ body{
 
 main{
     background-color: white;
+    
 }
 
 .imgContribuicoes{
@@ -97,11 +110,10 @@ main{
 .textoPostagem{
     margin-left: 10px;
     margin-top: -1px;
+    
 }
 
-.postTable{
-    margin-top: -1%;
-}
+
 
 .usuario{
     float: right;
@@ -130,7 +142,7 @@ header{
 }
 
 .botaoEntrar{
-    background-color: #4CAF50;
+    background-color: rgb(255, 199, 45);
     border: none;
     color: black;
     padding: 2px 32px;
@@ -151,12 +163,16 @@ nav{
 
 
 .conteudoSecao{
-    background-color: white;
+    
+    background: #f7f7f7;
+    border: 1px solid rgba(147, 184, 189,0.8);
+    background-color: #f7f7f7;
     border-width: 1px;
-    margin-top: -15px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
+
     width: auto;
     height: auto;
     
@@ -164,19 +180,43 @@ nav{
 
 
 .rodaPe{
-    background-color: #343434;;
-    border-width: 1px;
+    background-color: #333;
     margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 4px;
-    width: 99,8%;
+    margin-left: 20px; 
+    margin-right: 20px;
     height: 120px;
     flex: 1;
 
 }
 
 .usuario a:hover{
-    background-color: rgba(23, 190, 51, 0.747);
+    background-color: rgba(241, 238, 15, 0.747);
 
 }
+
+input:not([type="checkbox"]){
+    width: 30%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+   
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+   
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  #inputUsuario{
+    height: 5px;
+    width: 25%;
+  }
+  
+  #inputSenha{
+    height: 5px;
+    width: 25%;
+  }
