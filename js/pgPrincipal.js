@@ -1,4 +1,14 @@
-var mapCasos  =new Map() 
+var mapCasos  = new Map() 
+var parmAtualizacao = 780
+
+window.addEventListener('resize', function () {
+  //var altura = window.innerHeight;
+  var largura = window.innerWidth;
+  //alert(largura)
+  if (largura < 650 || largura > 650) 
+      window.location.reload();
+});
+
 
 function menu() {
     var x = document.getElementById("myTopnav");
@@ -17,22 +27,33 @@ function getCasos() {
                estimated_population_2019, is_last, place_type, state}) =>
        mapCasos.set(city, confirmed)
     )
-   }).catch(erro => alert(erro));
+   }).catch(erro => erro);
  }
 
  function drawChart() {
   // Define the chart to be drawn.
+  //https://www.tutorialspoint.com/googlecharts/googlecharts_configuration_syntax.htm
   var data = google.visualization.arrayToDataTable([
      ['Year', 'Blumenau', 'Gaspar', 'Indaial', 'Pomerode', 'Ilhota', 'Brusque', 'Joinville', 'Rio do Sul', 'Florianópolis'],
      ['2020',  mapCasos.get("Blumenau"),  mapCasos.get("Gaspar"), mapCasos.get("Indaial"), mapCasos.get("Pomerode"),  mapCasos.get("Ilhota"),
      mapCasos.get("Brusque"), mapCasos.get("Joinville"), mapCasos.get("Rio do Sul"), mapCasos.get("Florianópolis")] 
     ]);
 
-  var options = {title: 'Population (in millions)'};  
+  var options = {
+    backgroundColor: "#f7f7f7",
+    chart: {
+      title: '',
+    },
+    chartArea: {
+      backgroundColor:{
+        fill:"#f7f7f7"
+      }
+    }
+  };  
 
   // Instantiate and draw the chart.
   var chart = new google.charts.Bar(document.getElementById('container'));
-  chart.draw(data, options);
+  chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
