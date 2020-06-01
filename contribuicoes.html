@@ -24,6 +24,9 @@
         <a id="btLogin" class="botaoEntrar" type="submit">entrar</a>
         </nav>
         <label class="titulo" id="lbTitulo">Victor Calazans</label>
+        <br>
+        <a href="cadastro.html" style="float: right; margin-right: 4.8%; font-weight: bold; margin-top: -20px;"> Cadastre-se</a>
+
         </form>
 
         
@@ -34,8 +37,13 @@
         <a href="index.html" >Início</a>
         <a href="#contribuicoes" class="active">Contribuições</a>
         <a href="#conteudo">Conteúdo</a>
-        <a href="#contato">Contato</a>
+        <a href="Contato.html">Contato</a>
         <a href="#habilidades">Habilidades</a>
+        <script>
+            var displayWidth = $(document).width();
+            if(displayWidth < 1366)
+                document.write('<a href="loginMobile.html">Login</a>')
+        </script>
         <a href="javascript:void(0);" class="icon" onclick="menu()">
           <i class="fa fa-bars"></i>
         </a>

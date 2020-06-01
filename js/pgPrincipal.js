@@ -1,10 +1,6 @@
-var mapCasos  = new Map() 
-var parmAtualizacao = 780
 
 window.addEventListener('resize', function () {
-  //var altura = window.innerHeight;
   var largura = window.innerWidth;
-  //alert(largura)
   if (largura < 650 || largura > 650) 
       window.location.reload();
 });
@@ -19,24 +15,13 @@ function menu() {
     }
   }
 
-function getCasos() {
-    fetch("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SC")
-    .then(response => response.json())
-    .then(data => {
-       data["results"].forEach(({city, city_ibge_code, confirmed, confirmed_per_100k_inhabitants, date, death_rate, deaths,
-               estimated_population_2019, is_last, place_type, state}) =>
-       mapCasos.set(city, confirmed)
-    )
-   }).catch(erro => erro);
- }
 
  function drawChart() {
   // Define the chart to be drawn.
   //https://www.tutorialspoint.com/googlecharts/googlecharts_configuration_syntax.htm
   var data = google.visualization.arrayToDataTable([
-     ['Year', 'Blumenau', 'Gaspar', 'Indaial', 'Pomerode', 'Ilhota', 'Brusque', 'Joinville', 'Rio do Sul', 'Florianópolis'],
-     ['2020',  mapCasos.get("Blumenau"),  mapCasos.get("Gaspar"), mapCasos.get("Indaial"), mapCasos.get("Pomerode"),  mapCasos.get("Ilhota"),
-     mapCasos.get("Brusque"), mapCasos.get("Joinville"), mapCasos.get("Rio do Sul"), mapCasos.get("Florianópolis")] 
+     ['', 'HTML5', 'CSS3', 'C/C++', 'JAVA', 'JavaScript', 'C#', 'SO', 'LINUX', 'WINDOWS'],
+     [' ',  200,  300, 500, 435,  220, 280, 400, 400, 450] 
     ]);
 
   var options = {
